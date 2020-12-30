@@ -1,0 +1,13 @@
+sudo pip3 install -r requirements.txt
+sudo snap install --classic heroku
+heroku
+// threre should be ZERO errors
+heroku create userbots
+// userbots -- heroku name of your bot
+git init .
+heroku git:remote -a userbots
+git add . // ??
+git commit -am "first commit on Heroku"
+git push heroku master
+https://uptimerobot.com -- for watching after bot (he like to sleep)
+http://userbots.herokuapp.com -- monitoring your bot
